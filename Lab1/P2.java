@@ -1,3 +1,5 @@
+package Lab1;
+
 import java.util.Scanner;
 
 //Quite unsure what the question really wants?
