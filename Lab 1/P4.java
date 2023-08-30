@@ -6,11 +6,11 @@ public class P4 {
         System.out.println("Input height: ");
         int height = scanner.nextInt();
 
+        scanner.close();
         if (height <= 0) {
             System.out.println("height = 0 - Error input!!");
             return;
         }
-
         int flip = 1;
         String out = "";
         for (int i = 0; i < height; i++) {
@@ -26,5 +26,4 @@ public class P4 {
             flip *= -1;
         }
     }
-
 }

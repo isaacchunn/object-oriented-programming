@@ -126,14 +126,14 @@ public class Lab2p1 {
     // 3.6
     public static int position(int n, int digit) {
         // Count the amount of digits of this number first
-        int digitIndex = countDigits(n);
+        int position = 1;
         while (n > 0) {
             int digitFromRight = n % 10;
             if (digitFromRight == digit)
-                return digitIndex;
+                return position;
             // Else we / 10
             n /= 10;
-            digitIndex--;
+            position++;;
         }
         return -1;
     }
