@@ -34,5 +34,8 @@ public class P1 {
                 break;
             }
         }
+
+        // Close scanner
+        scanner.close();
     }
 }

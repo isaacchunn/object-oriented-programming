@@ -72,6 +72,9 @@ public class Lab2p1 {
             }
 
         } while (choice < 7);
+
+        // Close scanner at the end
+        sc.close();
     }
 
     // Method code goes below
@@ -91,6 +94,7 @@ public class Lab2p1 {
             }
         }
         System.out.println(correct + " answers out of 5 are correct.");
+        sc.close();
     }
 
     // 3.3
@@ -133,12 +137,13 @@ public class Lab2p1 {
                 return position;
             // Else we / 10
             n /= 10;
-            position++;;
+            position++;
+            ;
         }
         return -1;
     }
 
-    // 3.7 (TODO: Find non string implementation!)
+    // 3.7 (td: Find non string implementation!)
     public static long extractOddDigits(long n) {
         String s = "";
         while (n > 0) {

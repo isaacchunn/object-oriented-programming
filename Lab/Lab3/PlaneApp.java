@@ -56,5 +56,6 @@ public class PlaneApp {
             }
             System.out.println("");
         } while (choice < 7);
+        sc.close();
     }
 }

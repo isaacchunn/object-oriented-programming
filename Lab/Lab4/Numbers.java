@@ -25,5 +25,6 @@ public class Numbers {
         for (int i = 0; i < size; i++)
             System.out.print(intList[i] + " ");
         System.out.println();
+        scan.close();
     }
 }

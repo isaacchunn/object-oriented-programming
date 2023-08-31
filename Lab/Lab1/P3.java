@@ -23,6 +23,7 @@ public class P3 {
         // Check the bounds
         if (endingValue < startingValue) {
             System.out.println("Input error!");
+            scanner.close();
             return;
         }
         // Safe to ask for incremental value
@@ -52,5 +53,8 @@ public class P3 {
             System.out.println(count + " \t " + (double) count * 1.82);
             count += increment;
         } while (count <= endingValue);
+
+        // Close scanner at the end
+        scanner.close();
     }
 }

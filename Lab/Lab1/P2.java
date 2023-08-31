@@ -28,5 +28,8 @@ public class P2 {
         } else {
             System.out.println("No grade applicable for this salary.");
         }
+
+        // Close scanner at the end
+        scanner.close();
     }
 }

@@ -1,7 +1,7 @@
 package Lab4;
 
 //Question 5, implements the comparable interface
-public class SalePerson implements Comparable {
+public class SalePerson implements Comparable<Object> {
 
     private String firstName;
     private String lastName;
@@ -32,6 +32,10 @@ public class SalePerson implements Comparable {
         // Else can check class
         if (o == null || getClass() != o.getClass())
             return false;
+
+        // // Can also do
+        // if (!(o instanceof SalePerson))
+        // return false;
 
         // Then we can cast our object
         SalePerson other = (SalePerson) o;
