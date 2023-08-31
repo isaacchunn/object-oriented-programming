@@ -1,4 +1,4 @@
-package Tutorial.Tutorial2;
+package Tutorial.Tutorial2.Circle;
 
 public class Circle {
     private double radius; // radius of circle
@@ -21,12 +21,12 @@ public class Circle {
 
     // Calculate area
     public double area() {
-        return Math.PI * (this.radius * this.radius);
+        return Circle.PI * (this.radius * this.radius);
     }
 
     // Calculate circumference
     public double circumference() {
-        return (2 * Math.PI) * radius;
+        return (2 * Circle.PI) * radius;
     }
 
     // Print area

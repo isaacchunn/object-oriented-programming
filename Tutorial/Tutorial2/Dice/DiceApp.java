@@ -1,4 +1,4 @@
-package Tutorial.Tutorial2;
+package Tutorial.Tutorial2.Dice;
 
 // import java.awt.event.KeyAdapter;
 // import java.awt.event.KeyEvent;
@@ -56,5 +56,7 @@ public class DiceApp {
                 }
             }
         }
+
+        scanner.close();
     }
 }

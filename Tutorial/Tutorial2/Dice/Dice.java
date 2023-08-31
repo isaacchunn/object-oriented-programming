@@ -1,4 +1,4 @@
-package Tutorial.Tutorial2;
+package Tutorial.Tutorial2.Dice;
 
 public class Dice {
 
