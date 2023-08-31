@@ -22,3 +22,19 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+*.vsidx
+*.db
+*.ipch
+Lab/Lab5/.vs/Lab5/v17/.suo
+*.obj
+*.exe
+*.recipe
+*.ilk
+*.pdb
+*.tlog
+*.txt
+*.idb
+*.filters
+*.vcxproj
+*.user
+*.json
