@@ -8,11 +8,12 @@ public class BubbleSortApp {
         // Initialize a scanner object
         Scanner scanner = new Scanner(System.in);
 
-        int[] array = new int[100];
+        //int[] array = new int[100]; // Unimproved
+        int[] array;
         System.out.println("\n\n Enter number of Integer elements to be sorted: ");
         // Get the number of elements
         int n = scanner.nextInt();
-
+        array = new int[n];
         for (int i = 0; i < n; i++) {
             System.out.printf("\n\n Enter integer value for element no.%d : ", i + 1);
             array[i] = scanner.nextInt();
