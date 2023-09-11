@@ -5,7 +5,7 @@ public class Dice {
     private int valueOfDice;
 
     public Dice() {
-
+        this.valueOfDice = 1;
     }
 
     public void setDiceValue() {

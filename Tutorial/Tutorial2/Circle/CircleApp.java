@@ -23,7 +23,7 @@ public class CircleApp {
             switch (choice) {
                 case 1: {
                     System.out.println("Enter the radius to compute the area and circumference");
-                    int radius = scanner.nextInt();
+                    double radius = scanner.nextDouble();
                     if (radius > 0) {
                         // Its a valid circle
                         circle = new Circle(radius);
