@@ -38,3 +38,10 @@ Lab/Lab5/.vs/Lab5/v17/.suo
 *.vcxproj
 *.user
 *.json
+
+
+# Intelli J files
+*out
+*.idea
+*iml
+*.DS_Store

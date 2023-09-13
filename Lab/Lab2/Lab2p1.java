@@ -71,7 +71,7 @@ public class Lab2p1 {
                     break;
             }
 
-        } while (choice < 7);
+        } while (choice != 7);
 
         // Close scanner at the end
         sc.close();
@@ -94,7 +94,6 @@ public class Lab2p1 {
             }
         }
         System.out.println(correct + " answers out of 5 are correct.");
-        sc.close();
     }
 
     // 3.3
