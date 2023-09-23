@@ -2,7 +2,7 @@ package Lab3;
 
 public class PlaneSeat {
     // Instance variables
-    private int seatId;
+    private final int seatId;
     private boolean assigned;
     private int customerId;
 

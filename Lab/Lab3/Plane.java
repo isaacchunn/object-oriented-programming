@@ -1,27 +1,28 @@
 package Lab3;
 
 public class Plane {
-    // Instance variables
-
-    // Instnace variable containing information on then seats in the plane. It is
+    public static final int MAX_SEATS = 12;
+    // Instance variable containing information on then seats in the plane. It is
     // declared as an array of 12 seat objects
-    private PlaneSeat[] seat = new PlaneSeat[12];
+    private PlaneSeat[] seat;
     // Instance variable containing information on the number of empty seats
-    private int numEmptySeat = 12;
+    private int numEmptySeat;
 
     public static void print(PlaneSeat[] seats) {
-        for (int i = 0; i < seats.length; i++) {
-            System.out.println(seats[i]);
+        for (PlaneSeat planeSeat : seats) {
+            System.out.println(planeSeat);
         }
     }
 
     // Constructor
     public Plane() {
+        //Initialize the seats
+        seat = new PlaneSeat[MAX_SEATS];
         // Loop through and assign a seat id to each object in seat
         for (int i = 0; i < seat.length; i++) {
             this.seat[i] = new PlaneSeat(i + 1);
         }
-        this.numEmptySeat = 12;
+        this.numEmptySeat = MAX_SEATS;
     }
 
     // Instance variables
@@ -32,12 +33,12 @@ public class Plane {
         // Deep copy
         PlaneSeat[] sorted = this.seat.clone();
         // print(sorted);
-        // Bubble sort for now.. to get it to work
+        // Bubble sort for now... to get it to work
         for (int i = 0; i < sorted.length; i++) {
             if (!sorted[i].isOccupied())
                 continue;
             for (int j = i; j < sorted.length; j++) {
-                // if previous one was larger, move this index forward (alot of wasted
+                // if previous one was larger, move this index forward (a lot of wasted
                 // repetitions though)
                 if (!sorted[j].isOccupied())
                     continue;
