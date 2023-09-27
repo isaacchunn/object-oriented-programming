@@ -4,7 +4,7 @@ public class Plane {
     public static final int MAX_SEATS = 12;
     // Instance variable containing information on then seats in the plane. It is
     // declared as an array of 12 seat objects
-    private PlaneSeat[] seat;
+    private final PlaneSeat[] seat;
     // Instance variable containing information on the number of empty seats
     private int numEmptySeat;
 
@@ -111,9 +111,13 @@ public class Plane {
     // A method that unassigns a seat
     public void unAssignSeat(int seatId) {
         // Call unassign function
-        this.seat[seatId - 1].unAssign();
-        // Increment number of empty seats
-        this.numEmptySeat++;
-        System.out.println("Seat Unassigned!");
+        //If the seat is occupied, then we un assign the seats
+        if(this.seat[seatId - 1].isOccupied())
+        {
+            this.seat[seatId - 1].unAssign();
+            // Increment number of empty seats
+            this.numEmptySeat++;
+            System.out.println("Seat Unassigned!");
+        }
     }
 }
