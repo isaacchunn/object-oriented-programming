@@ -23,7 +23,7 @@ public class Cylinder extends Circle {
     }
 
     public double volume() {
-        return area() * height;
+        return super.area() * height;
     }
 
     @Override
