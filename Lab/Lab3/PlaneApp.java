@@ -54,7 +54,7 @@ public class PlaneApp {
                     break;
                 }
             }
-            System.out.println("");
+            System.out.println();
         } while (choice < 7);
         sc.close();
     }
