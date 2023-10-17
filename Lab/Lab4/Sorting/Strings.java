@@ -1,10 +1,10 @@
-package Lab4;
+package Lab4.Sorting;
 
 import java.util.Scanner;
 
 public class Strings {
     // --------------------------------------------
-    // Reads in an array of integers, sorts them,
+    // Reads in an array of strings, sorts them,
     // then prints them in sorted order.
     // --------------------------------------------
     public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class Strings {
         System.out.print("\nHow many strings do you want to sort? ");
         size = scan.nextInt();
         stringList = new String[size];
-        // Go the next line as next int doesnt matter
+        // Go the next line as next int doesn't matter
         scan.nextLine();
         System.out.println("\nEnter the strings...");
         for (int i = 0; i < size; i++) {

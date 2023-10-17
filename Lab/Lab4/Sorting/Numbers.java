@@ -1,4 +1,4 @@
-package Lab4;
+package Lab4.Sorting;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class Numbers {
     public static void main(String[] args) {
 
         // Creates an Integer array
-        Integer[] intList;
+        Integer[] intList; // changed int to Integer as int is a primitive type.
         // Size of integer list
         int size;
         Scanner scan = new Scanner(System.in);
