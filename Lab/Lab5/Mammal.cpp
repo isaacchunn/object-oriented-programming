@@ -1,25 +1,37 @@
+//
+//  Mammal.cpp
+//  Lab5
+//
+//  Created by Isaac on 31/10/23.
+//
+
 #include "Mammal.h"
 
 Mammal::Mammal()
-	: Animal()
+: Animal()
 {
+    
 }
 
-Mammal::Mammal(string name, COLOR color)
-	: Animal(name, color)
+Mammal::Mammal(string n, COLOR c)
+: Animal(n,c)
 {
+    
 }
 
 Mammal::~Mammal()
 {
-}
-
-void Mammal::eat() const
-{
-	cout << "Mammal eats " << endl;
+    
 }
 
 void Mammal::move() const
 {
-	cout << "Mammal moves " << endl;
+    cout << "Mammal move " << endl;
 }
+
+void Mammal::eat() const
+{
+    cout << "Mammal eat " << endl;
+}
+
+

@@ -45,3 +45,8 @@ Lab/Lab5/.vs/Lab5/v17/.suo
 *.idea
 *iml
 *.DS_Store
+*.plist
+*.xcuserstate
+*.plist
+*.pbxproj
+*.xcworkspacedata
