@@ -13,10 +13,8 @@
 #include "Cat.h"
 #include "Lion.h"
 
-#define NO_OF_MAMMALS 3
-
 int main(int argc, const char * argv[]) {
-    // insert code here...
+    //system("pwd");
     //Animal a = Animal("Rabbit", COLOR::White);
     //a.speak();
     Mammal m = Mammal("Whale", Blue);
