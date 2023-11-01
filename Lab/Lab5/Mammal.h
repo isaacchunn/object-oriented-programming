@@ -21,6 +21,8 @@ public:
     //In order for mammal class to not be abstract, especially for move
     //Not overriding pure virtual functions makes the derived class abstract itself, hence overriding is needed 
     void move() const;
+    //For zoo question, remove virtual to get the mammal eat behaviour
+    //I am choosing to use the overriden implementations
     virtual void eat() const;
 };
 

@@ -21,12 +21,12 @@ Mammal::Mammal(string n, COLOR c)
 
 Mammal::~Mammal()
 {
-    
+    cout << "Mammal die" << endl;
 }
 
 void Mammal::move() const
 {
-    cout << "Mammal move " << endl;
+    cout << "Mammal speak " << endl;
 }
 
 void Mammal::eat() const

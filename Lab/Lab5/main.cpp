@@ -77,6 +77,7 @@ int main(int argc, const char * argv[]) {
                     mammals[i]->move();
                     mammals[i]->speak();
                     mammals[i]->eat();
+                    cout << endl;
                 }
                 break;
             }
